@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+}
+
+/* -------------------- 전체 사이드바 -------------------- */
+.sidebar {
+    position: fixed;
+    left: 30px;
+    top: 15px;
+    width: 78px;
+    height: 93vh;
+    background: #292828;
+    color: white;
+    border: #485054 solid 1px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 14px 0;
+    transition: width 0.35s ease;
+    overflow: hidden;
+}
+
+/* 확장 시 */
+.sidebar:hover {
+    width: 200px;
+}
+
+/* -------------------- 로고 -------------------- */
+
+.top-section {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 9px;      /* 메뉴랑 같은 시작점 */
+    margin-bottom: 20px;     /* 메뉴와 간격 */
+}
+
+.logo-icon {
+    width: 60px;
+}
+
+/* -------------------- 메뉴 -------------------- */
+.menu {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 14px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    width: 150px;
+    background: #A694FF;
+}
+
+/* 텍스트는 확장 시에만 보이기 */
+.text {
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.25s ease;
+}
+
+.sidebar:hover .text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* -------------------- 하단 Profile + Plan -------------------- */
+/* ✅ 메뉴와 같은 세로선에 아이콘 정렬되도록 조정 */
+.bottom-section {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* 가운데 말고 왼쪽 기준 */
+    gap: 16px;
+    padding-left: 14px;        /* 메뉴와 동일한 padding-left */
+}
+
+.bottom-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 8px 12px;         /* menu-item과 동일 값 */
+    cursor: pointer;
+}
+
+.bottom-item .icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+/* 텍스트는 확장 시에만 보여야 함 */
+.bottom-item .text {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.25s ease;
+}
+
+.sidebar:hover .bottom-item .text {
+    opacity: 1;
+    transform: translateX(0);
+}
