@@ -12,7 +12,7 @@ body {
 
 /* 채팅 전체 영역 */
 .chat-wrapper {
-  margin-left: 140px;       /* Sidebar와 간격 */
+  margin-left: 140px;
   width: calc(100% - 160px);
   display: flex;
   flex-direction: column;
@@ -33,22 +33,6 @@ body {
   align-items: flex-start;
 }
 
-/* 왼쪽 상단 아이콘 (Circle) */
-.chat-icon {
-  position: absolute;
-  top: -18px;
-  left: -18px;
-  background-color: #C3C3C3;
-  color: black;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-}
-
 /* 메시지 텍스트 */
 .chat-text {
   margin-top: 10px;
@@ -58,7 +42,7 @@ body {
 
 /* 입력 영역 전체 */
 .input-area {
-  width: 60%;
+  width: 61%;
   background-color: #3a3a3a;
   border-radius: 20px;
   display: flex;

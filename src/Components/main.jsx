@@ -9,7 +9,6 @@ const Main = () => {
       <div className="chat-wrapper">
         {/* 메시지 박스 */}
         <div className="chat-box">
-          <div className="chat-icon"></div>
           <p className="chat-text">안녕하세요! 무엇을 도와드릴까요? 😊</p>
         </div>
 
