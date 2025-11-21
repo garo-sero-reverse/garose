@@ -1,0 +1,102 @@
+body {
+  background-color: #000;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 전체 레이아웃 */
+.main-container {
+  display: flex;
+}
+
+/* 채팅 전체 영역 */
+.chat-wrapper {
+  margin-left: 140px;       /* Sidebar와 간격 */
+  width: calc(100% - 160px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  gap: 30px;
+}
+
+/* 메시지 박스 */
+.chat-box {
+  width: 60%;
+  min-height: 170px;
+  background-color: #3a3a3a;
+  border-radius: 18px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 왼쪽 상단 아이콘 (Circle) */
+.chat-icon {
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  background-color: #C3C3C3;
+  color: black;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* 메시지 텍스트 */
+.chat-text {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #EFEFEF;
+}
+
+/* 입력 영역 전체 */
+.input-area {
+  width: 60%;
+  background-color: #3a3a3a;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* 입력창 */
+.chat-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+/* 아이콘 묶음 */
+.input-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.input-icons button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.send-btn {
+  background: #6A5ACD;
+  border-radius: 10px;
+  padding: 6px 10px;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #8476ff;
+}
