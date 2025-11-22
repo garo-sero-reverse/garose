@@ -1,0 +1,76 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* 페이지 전체 중앙 정렬 */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* 배경 없이 폼만 중앙에 배치 */
+.signin-box {
+  width: 450px;
+}
+
+/* 제목 */
+.signin-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* 폼 스타일 */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* 입력 라벨 */
+.signin-form label {
+  font-size: 14px;
+  margin-bottom: -5px;
+}
+
+/* 입력창 스타일 */
+.signin-form input {
+  width: 100%;
+  padding: 12px;
+  background: #3a3a3a;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.signin-form input:focus {
+  background-color: #444;
+}
+
+/* 버튼 스타일 */
+.signin-btn {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 16px;
+  padding: 10px 0;
+  background-color: #9e88ff;
+  color: black;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signin-btn:hover {
+  background-color: #b9a6ff;
+}

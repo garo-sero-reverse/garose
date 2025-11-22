@@ -1,0 +1,123 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* 중앙 정렬 레이아웃 */
+.mypage-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* 프로필 카드 */
+.mypage-box {
+  width: 480px;
+  background: #2e2e2e;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* 타이틀 */
+.mypage-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* 정보 텍스트 */
+.mypage-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* 버튼 스타일 */
+.mypage-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.edit-btn,
+.logout-btn {
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.edit-btn {
+  background: #9e88ff;
+  color: black;
+}
+
+.edit-btn:hover {
+  background: #b9a6ff;
+}
+
+.logout-btn {
+  background: #444;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #666;
+}
+
+/* 로딩 텍스트 */
+.loading-text {
+  text-align: center;
+  font-size: 18px;
+  color: #bbb;
+}
+
+.mypage-subtitle {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #bb86fc;
+  font-weight: bold;
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.log-card {
+  background: #3a3a3a;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #555;
+}
+
+.log-input,
+.log-output {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.log-time {
+  text-align: right;
+  font-size: 12px;
+  color: gray;
+}
+
+.no-log {
+  font-size: 14px;
+  margin-top: 6px;
+  color: gray;
+}

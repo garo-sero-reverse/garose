@@ -1,0 +1,154 @@
+body {
+    background-color: black;
+}
+
+/* -------------------- 전체 사이드바 -------------------- */
+.sidebar {
+    position: fixed;
+    left: 30px;
+    top: 15px;
+    width: 78px;
+    height: 93vh;
+    background: #292828;
+    color: white;
+    border: #485054 solid 1px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 14px 0;
+    transition: width 0.35s ease;
+    overflow: hidden;
+}
+
+/* 확장 시 */
+.sidebar:hover {
+    width: 200px;
+}
+
+/* -------------------- 로고 -------------------- */
+
+.top-section {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 9px;      
+    margin-bottom: 20px;     
+}
+
+.logo-icon {
+    width: 60px;
+}
+
+/* -------------------- 메뉴 -------------------- */
+.menu {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 14px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    width: 150px;
+    background: #A694FF;
+}
+
+/* -------------------- 서브메뉴 -------------------- */
+
+/* 기본 숨김 상태 */
+.submenu {
+    margin-left: 28px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    animation: fadeSlide 0.3s ease;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 서브 항목 스타일 */
+.submenu li {
+    font-size: 13px;
+    padding: 4px 0;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.submenu li:hover {
+    color: #A694FF;
+}
+
+/* 텍스트는 확장 시에만 보이기 */
+.text {
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.25s ease;
+}
+
+.sidebar:hover .text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* -------------------- 하단 Profile + Plan -------------------- */
+
+.bottom-section {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+    gap: 16px;
+    padding-left: 14px;        
+}
+
+.bottom-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 8px 12px;         
+    cursor: pointer;
+}
+
+.bottom-item .icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.bottom-item .text {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.25s ease;
+}
+
+.sidebar:hover .bottom-item .text {
+    opacity: 1;
+    transform: translateX(0);
+}
