@@ -1,0 +1,24 @@
+# 확장자 ignore
+*.jpg
+
+# 라이브러리 ignore
+__pycache__/
+# 로컬 모델 파이프라인
+hf_cache/
+# checkpoint
+2025_12_14
+# SDXL LoRa 학습 safetensors 
+loras/
+# 가상환경
+garosePTJ/
+# wandb로그
+wandb/
+
+# 파일 ignore
+# 테스트용 파일
+test.py
+# 테스트용 파일2
+test2.py
+# 학습 테스트 파일
+train_test.py
+
